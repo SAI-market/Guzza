@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUZZA – Pizzas de masa madre</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ HEADER ░░ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="images/logo.png" alt="GUZZA" class="logo-img" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block'" />
+        <span id="logo-text" class="logo-text" style="display:none;">GUZZA</span>
+      </div>
+      <div id="status-banner" class="status-banner"></div>
+    </div>
+  </header>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-texture"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Luján, Buenos Aires</p>
+      <h1 class="hero-title">Masa madre.<br /><em>48 horas.</em><br />Horno de leña.</h1>
+      <p class="hero-subtitle">Pizzas artesanales precocidas al vacío, listas para hornear en casa. Sin conservantes. Sin apuro.</p>
+      <a href="#menu" class="btn btn-primary">Ver el menú</a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-circle"></div>
+      <img src="images/hero.png" alt="Pizza GUZZA" class="hero-img" onerror="this.style.display='none'" />
+    </div>
+  </section>
+
+  <!-- ░░ PROCESS ░░ -->
+  <section class="process" id="proceso">
+    <div class="container">
+      <h2 class="section-title">Así hacemos cada pizza</h2>
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-icon">⏳</div>
+          <h3>Fermentación 48h</h3>
+          <p>Nuestra masa madre descansa dos días completos. Ese tiempo es el que le da sabor real, digestibilidad y esa textura que no se improvisa.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-icon">🔥</div>
+          <h3>Horno de leña</h3>
+          <p>Cocción a más de 400°C en horno de bóveda. El calor intenso crea esa base crujiente con bordes alveolados que son marca de la casa.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-icon">📦</div>
+          <h3>Al vacío</h3>
+          <p>Precocidas y selladas al vacío. Llegan a tu casa listas para terminar en el horno. Sin cadena de frío rota, sin pérdida de sabor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ MENU ░░ -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <h2 class="section-title">El menú</h2>
+      <p class="section-subtitle">Pedidos de lunes a viernes · Entregas los sábados y domingos</p>
+
+      <!-- Visual menu -->
+      <div class="menu-visual">
+        <img src="images/menu.jpg" alt="Menú GUZZA" class="menu-preview-img" onerror="this.parentElement.classList.add('no-img')" />
+        <a href="menu.pdf" target="_blank" rel="noopener" class="btn btn-outline menu-pdf-btn">Ver menú completo ↗</a>
+      </div>
+
+      <!-- Product system for cart -->
+      <div class="products-section">
+        <h3 class="products-section-title">Clásicas</h3>
+        <div class="products-grid" id="clasicas-grid">
+          <!-- JS renders cards here -->
+        </div>
+
+        <h3 class="products-section-title">Especiales</h3>
+        <div class="products-grid" id="especiales-grid">
+          <!-- JS renders cards here -->
+        </div>
+      </div>
+
+      <div id="weekend-notice" class="weekend-notice" style="display:none;">
+        🚚 Estamos entregando este finde. Los pedidos vuelven el lunes.
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ GALLERY ░░ -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <h2 class="section-title">Detrás de la pizza</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/gallery1.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+      </div>
+      <div class="gallery-item">
+        <video autoplay muted loop playsinline>
+          <source src="videos/video1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery2.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+      </div>
+      <div class="gallery-item">
+        <video autoplay muted loop playsinline>
+          <source src="videos/video2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery3.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery4.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PREPARATION GUIDE ░░ -->
+  <section class="prep-guide" id="preparacion">
+    <div class="container">
+      <h2 class="section-title">Cómo prepararla en casa</h2>
+      <div class="prep-steps">
+        <div class="prep-step">
+          <span class="step-num">01</span>
+          <h3>Precalentá el horno</h3>
+          <p>Al máximo, mínimo 20 minutos antes. Si tenés piedra para pizza, mejor. El calor tiene que estar parejo antes de poner la pizza.</p>
+        </div>
+        <div class="prep-step">
+          <span class="step-num">02</span>
+          <h3>Sacá del vacío</h3>
+          <p>Abrí el packaging y dejá reposar la pizza 5 minutos a temperatura ambiente antes de llevar al horno.</p>
+        </div>
+        <div class="prep-step">
+          <span class="step-num">03</span>
+          <h3>Horneá y disfrutá</h3>
+          <p>8 a 12 minutos en la rejilla superior. Cuando los bordes doren y el queso burbujee, está lista. Servir inmediatamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FAQ ░░ -->
+  <section class="faq-section" id="preguntas">
+    <div class="container">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo son los envíos?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Hacemos entregas los sábados y domingos en Luján y alrededores. Los pedidos se toman de lunes a viernes. Te coordinamos el horario por WhatsApp una vez confirmado el pedido.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo se paga?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Aceptamos transferencia bancaria, Mercado Pago y efectivo. Te pasamos los datos por WhatsApp al confirmar el pedido. El pago se coordina antes de la entrega.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo se conservan?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>En heladera: hasta 7 días selladas al vacío. En freezer: hasta 3 meses. No es necesario descongelar antes de hornear, simplemente agregá 3 a 5 minutos al tiempo de cocción.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Hacen pedidos grandes o eventos?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>¡Sí! Para pedidos de más de 10 pizzas o eventos escribinos con al menos una semana de anticipación. Coordinamos cantidades, sabores y logística sin problema.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Tienen opciones sin TACC o veganas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Actualmente nuestras pizzas contienen gluten (la masa madre es de trigo). Algunas opciones pueden hacerse sin queso animal. Consultanos por WhatsApp para casos específicos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">GUZZA</span>
+        <p>Pizzas de masa madre.<br />Horno de leña. Luján, Buenos Aires.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5491166730361" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/guzza.pizza" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div class="footer-info">
+        <h4>Pedidos</h4>
+        <p>Lunes a viernes</p>
+        <p>Entregas sábado y domingo</p>
+        <p>📍 Luján, Buenos Aires</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GUZZA. Hecho con ❤️ y masa madre.</p>
+    </div>
+  </footer>
+
+  <!-- ░░ FLOATING CART BUTTON ░░ -->
+  <button class="cart-fab" id="cart-fab" aria-label="Ver carrito">
+    <span class="cart-fab-icon">🛒</span>
+    <span class="cart-fab-count" id="cart-count">0</span>
+  </button>
+
+  <!-- ░░ CART MODAL ░░ -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
+    <div class="cart-header">
+      <h2>Tu pedido</h2>
+      <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="cart-body" id="cart-body">
+      <p class="cart-empty">Tu carrito está vacío.<br />Agregá pizzas desde el menú.</p>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0</span>
+      </div>
+      <button class="btn btn-whatsapp" id="checkout-btn">
+        <span>Hacer pedido por WhatsApp</span>
+        <span>💬</span>
+      </button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

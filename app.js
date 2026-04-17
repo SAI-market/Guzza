@@ -277,7 +277,7 @@ function closeCart() {
 function generateWhatsAppMessage() {
   if (cart.length === 0) return null;
 
-  let lines = ['Hola 👋, quiero hacer un pedido:\n'];
+  let lines = ['Hola, quiero hacer un pedido:\n'];
   cart.forEach(item => {
     lines.push(`• ${item.qty}x ${item.name} — ${formatPrice(item.price * item.qty)}`);
   });

@@ -11,7 +11,6 @@
 </head>
 <body>
 
-  <!-- ░░ HEADER ░░ -->
   <header class="site-header">
     <div class="header-inner">
       <div class="logo-wrap">
@@ -22,7 +21,6 @@
     </div>
   </header>
 
-  <!-- ░░ HERO ░░ -->
   <section class="hero" id="home">
     <div class="hero-bg-texture"></div>
     <div class="hero-content">
@@ -37,7 +35,6 @@
     </div>
   </section>
 
-  <!-- ░░ PROCESS ░░ -->
   <section class="process" id="proceso">
     <div class="container">
       <h2 class="section-title">Así hacemos cada pizza</h2>
@@ -61,29 +58,23 @@
     </div>
   </section>
 
-  <!-- ░░ MENU ░░ -->
   <section class="menu-section" id="menu">
     <div class="container">
       <h2 class="section-title">El menú</h2>
       <p class="section-subtitle">Pedidos de lunes a viernes · Entregas los sábados y domingos</p>
 
-      <!-- Visual menu -->
       <div class="menu-visual">
-        <img src="images/menu.jpg" alt="Menú GUZZA" class="menu-preview-img" onerror="this.parentElement.classList.add('no-img')" />
-        <a href="menu.pdf" target="_blank" rel="noopener" class="btn btn-outline menu-pdf-btn">Ver menú completo ↗</a>
+        <a href="menu.pdf" target="_blank" rel="noopener" class="btn btn-primary menu-pdf-btn">Ver menú completo ↗</a>
       </div>
 
-      <!-- Product system for cart -->
       <div class="products-section">
         <h3 class="products-section-title">Clásicas</h3>
         <div class="products-grid" id="clasicas-grid">
-          <!-- JS renders cards here -->
-        </div>
+          </div>
 
         <h3 class="products-section-title">Especiales</h3>
         <div class="products-grid" id="especiales-grid">
-          <!-- JS renders cards here -->
-        </div>
+          </div>
       </div>
 
       <div id="weekend-notice" class="weekend-notice" style="display:none;">
@@ -92,14 +83,13 @@
     </div>
   </section>
 
-  <!-- ░░ GALLERY ░░ -->
   <section class="gallery" id="galeria">
     <div class="container">
       <h2 class="section-title">Detrás de la pizza</h2>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="images/gallery1.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+        <img src="images/gallery1.jpeg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
       </div>
       <div class="gallery-item">
         <video autoplay muted loop playsinline>
@@ -107,7 +97,7 @@
         </video>
       </div>
       <div class="gallery-item">
-        <img src="images/gallery2.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+        <img src="images/gallery2.jpeg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
       </div>
       <div class="gallery-item">
         <video autoplay muted loop playsinline>
@@ -115,15 +105,14 @@
         </video>
       </div>
       <div class="gallery-item">
-        <img src="images/gallery3.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+        <img src="images/gallery3.jpeg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
       </div>
       <div class="gallery-item">
-        <img src="images/gallery4.jpg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
+        <img src="images/gallery4.jpeg" alt="" onerror="this.parentElement.classList.add('placeholder')" />
       </div>
     </div>
   </section>
 
-  <!-- ░░ PREPARATION GUIDE ░░ -->
   <section class="prep-guide" id="preparacion">
     <div class="container">
       <h2 class="section-title">Cómo prepararla en casa</h2>
@@ -147,7 +136,6 @@
     </div>
   </section>
 
-  <!-- ░░ FAQ ░░ -->
   <section class="faq-section" id="preguntas">
     <div class="container">
       <h2 class="section-title">Preguntas frecuentes</h2>
@@ -207,7 +195,6 @@
     </div>
   </section>
 
-  <!-- ░░ FOOTER ░░ -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
@@ -231,13 +218,11 @@
     </div>
   </footer>
 
-  <!-- ░░ FLOATING CART BUTTON ░░ -->
   <button class="cart-fab" id="cart-fab" aria-label="Ver carrito">
     <span class="cart-fab-icon">🛒</span>
     <span class="cart-fab-count" id="cart-count">0</span>
   </button>
 
-  <!-- ░░ CART MODAL ░░ -->
   <div class="cart-overlay" id="cart-overlay"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras">
     <div class="cart-header">

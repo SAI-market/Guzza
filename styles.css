@@ -321,29 +321,31 @@ a { color: inherit; text-decoration: none; }
   padding: 80px 0;
 }
 
+/* Transformado en Banner Gráfico */
 .menu-visual {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 64px;
-}
-
-.menu-preview-img {
   width: 100%;
   max-width: 760px;
+  min-height: 220px;
+  margin: 0 auto 64px auto;
   border-radius: var(--radius-lg);
+  
+  /* Filtro oscuro + Imagen gráfica de fondo */
+  background-image: linear-gradient(rgba(44, 76, 59, 0.6), rgba(44, 76, 59, 0.6)), url('images/menu-grafico.jpg');
+  background-size: cover;
+  background-position: center;
+  
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border);
-  object-fit: cover;
-}
-
-.menu-visual.no-img .menu-preview-img {
-  display: none;
+  overflow: hidden;
 }
 
 .menu-pdf-btn {
-  margin-top: 8px;
+  margin: 0;
+  z-index: 2;
 }
 
 .products-section {

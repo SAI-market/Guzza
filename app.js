@@ -279,9 +279,8 @@ function generateWhatsAppMessage() {
 
   let lines = ['Hola, quiero hacer un pedido:\n'];
   cart.forEach(item => {
-    lines.push(`• ${item.qty}x ${item.name} — ${formatPrice(item.price * item.qty)}`);
+    lines.push(`• ${item.qty}x ${item.name}`);
   });
-  lines.push(`\n*Total: ${formatPrice(getCartTotal())}*`);
   lines.push('\nMi dirección de entrega es: ____');
   lines.push('\n(Entrega sábado o domingo en Luján)');
 
